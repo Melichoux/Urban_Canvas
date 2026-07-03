@@ -8,8 +8,7 @@
 import Foundation
 struct Author: Identifiable {
     let id = UUID()
-    let firstName: String?
-    let lastName: String?
+    let name: String?
     let img: String?
     let age: Double? //verif float
     let origin: String?
@@ -19,8 +18,7 @@ struct Author: Identifiable {
 
 let authors = [
     Author(
-            firstName: "Manyoly",
-            lastName: "",
+            name: "Manyoly",
             img: "",
             age: 30,
             origin: "France",
@@ -29,8 +27,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Mahn",
-            lastName: "Kloix",
+            name: "Mahn Kloix",
             img: "",
             age: 38,
             origin: "France",
@@ -39,8 +36,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "RNST",
-            lastName: "",
+            name: "RNST",
             img: "",
             age: 32,
             origin: "France",
@@ -49,8 +45,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Joke",
-            lastName: "",
+            name: "Joke",
             img: "",
             age: 34,
             origin: "France",
@@ -59,8 +54,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Batch",
-            lastName: "",
+            name: "Batch",
             img: "",
             age: 33,
             origin: "France",
@@ -69,8 +63,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Nhobi",
-            lastName: "",
+            name: "Nhobi",
             img: "",
             age: 31,
             origin: "France",
@@ -79,8 +72,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Vale",
-            lastName: "Stencil",
+            name: "Vale Stencil",
             img: "",
             age: 39,
             origin: "Mexique",
@@ -89,8 +81,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Gütan",
-            lastName: "",
+            name: "Gütan",
             img: "",
             age: 36,
             origin: "France",
@@ -99,8 +90,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Stex",
-            lastName: "",
+            name: "Stex",
             img: "",
             age: 30,
             origin: "France",
@@ -109,8 +99,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Christian",
-            lastName: "Guémy (C215)",
+            name: "Christian Guémy (C215)",
             img: "",
             age: 53,
             origin: "France",
@@ -119,8 +108,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Thoma",
-            lastName: "Vuille (Monsieur Chat)",
+            name: "Thoma Vuille (Monsieur Chat)",
             img: "",
             age: 54,
             origin: "France",
@@ -129,8 +117,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Invader",
-            lastName: "",
+            name: "Invader",
             img: "",
             age: 57,
             origin: "France",
@@ -139,8 +126,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "TKO Crew",
-            lastName: "",
+            name: "TKO Crew",
             img: "",
             age: 32,
             origin: "France",
@@ -149,8 +135,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Mr. Difuz",
-            lastName: "",
+            name: "Mr. Difuz",
             img: "",
             age: 34,
             origin: "France",
@@ -159,8 +144,7 @@ let authors = [
         ),
      
         Author(
-            firstName: "Banksy",
-            lastName: "",
+            name: "Banksy",
             img: "",
             age: 52,
             origin: "Royaume-Uni",
