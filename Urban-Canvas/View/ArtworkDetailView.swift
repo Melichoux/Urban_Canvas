@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ArtworkDetailView: View {
     
-    let artwork: Artwork
+    var artwork: Artwork
     
     var body: some View {
         VStack {
             Image (artwork.image)
                 .resizable()
                 .scaledToFit()
+                .opacity(0.7)
             
 //          AsyncImage(url: URL(string: "https://example.com/icon.png")) { image in
 //            image.resizable()
@@ -33,8 +34,9 @@ struct ArtworkDetailView: View {
                 Text(artwork.type)
                 Text(artwork.conservation)
                 Text(artwork.date)
-                Text(artwork.author)
                 Text(artwork.localisation)
+                Text(String(artwork.latitude))
+                Text(String(artwork.longitude))
             }
             
            

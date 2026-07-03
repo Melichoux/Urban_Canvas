@@ -7,7 +7,7 @@
 
 import Foundation
 
-//binding avec author??
+//La ville pourra faire l'objet d'un struc
 
 struct Artwork: Identifiable {
     let id = UUID()
@@ -19,6 +19,7 @@ struct Artwork: Identifiable {
     let date: String
     let author: String
     let localisation: String
+    let city: String
     let latitude: Double
     let longitude: Double
 }
@@ -33,6 +34,7 @@ let artworks = [
             date: "2022",
             author: authors[0].name!,
             localisation: "1-3 Rue du Bouleau, 13002 Marseille",
+            city: "Marseille",
             latitude: 43.29749,
             longitude: 5.36724
         ),
@@ -46,6 +48,7 @@ let artworks = [
             date: "2021",
             author: authors[1].name!,
             localisation: "Marseille (quartier variable)",
+            city: "Marseille",
             latitude: 43.2985,
             longitude: 5.372
         ),
@@ -59,6 +62,7 @@ let artworks = [
             date: "2020",
             author: authors[2].name!,
             localisation: "12-14 Rue du Panier, 13002 Marseille",
+            city: "Marseille",
             latitude: 43.2967,
             longitude: 5.3665
         ),
@@ -72,6 +76,7 @@ let artworks = [
             date: "2021",
             author: authors[3].name!,
             localisation: "2-12 Rue Puits Saint-Antoine, 13002 Marseille",
+            city: "Marseille",
             latitude: 43.2965,
             longitude: 5.367
         ),
@@ -85,6 +90,7 @@ let artworks = [
             date: "2019",
             author: authors[4].name!,
             localisation: "Le Panier, 13002 Marseille",
+            city: "Marseille",
             latitude: 43.297,
             longitude: 5.3668
         ),
@@ -98,6 +104,7 @@ let artworks = [
             date: "2020",
             author: authors[5].name!,
             localisation: "Le Panier, 13002 Marseille",
+            city: "Marseille",
             latitude: 43.2968,
             longitude: 5.3666
         ),
@@ -111,6 +118,7 @@ let artworks = [
             date: "2021",
             author: authors[6].name!,
             localisation: "Le Panier, 13002 Marseille",
+            city: "Marseille",
             latitude: 43.2969,
             longitude: 5.3667
         ),
@@ -124,6 +132,7 @@ let artworks = [
             date: "2018",
             author: authors[7].name!,
             localisation: "Rue Vian, 13006 Marseille",
+            city: "Marseille",
             latitude: 43.2928,
             longitude: 5.3835
         ),
@@ -137,6 +146,7 @@ let artworks = [
             date: "2020",
             author: authors[8].name!,
             localisation: "Rue Ferdinand-Rey, 13006 Marseille",
+            city: "Marseille",
             latitude: 43.2919,
             longitude: 5.3838
         ),
@@ -150,6 +160,7 @@ let artworks = [
             date: "2017",
             author: authors[9].name!,
             localisation: "Cours Julien, 13006 Marseille",
+            city: "Marseille",
             latitude: 43.2924,
             longitude: 5.3844
         ),
@@ -163,6 +174,7 @@ let artworks = [
             date: "2015",
             author: authors[10].name!,
             localisation: "Cours Julien, 13006 Marseille",
+            city: "Marseille",
             latitude: 43.2923,
             longitude: 5.3842
         ),
@@ -176,6 +188,7 @@ let artworks = [
             date: "2016",
             author: authors[11].name!,
             localisation: "Marseille (emplacement variable)",
+            city: "Marseille",
             latitude: 43.296,
             longitude: 5.375
         ),
@@ -189,6 +202,7 @@ let artworks = [
             date: "2019",
             author: authors[12].name!,
             localisation: "Friche de la Belle de Mai, 13003 Marseille",
+            city: "Marseille",
             latitude: 43.3096,
             longitude: 5.3897
         ),
@@ -202,6 +216,7 @@ let artworks = [
             date: "2019",
             author: authors[13].name!,
             localisation: "Friche de la Belle de Mai, 13003 Marseille",
+            city: "Marseille",
             latitude: 43.3095,
             longitude: 5.3896
         ),
@@ -215,6 +230,7 @@ let artworks = [
             date: "2025",
             author: authors[14].name!,
             localisation: "Rue Félix Frégier, 13007 Marseille",
+            city: "Marseille",
             latitude: 43.2843,
             longitude: 5.3611
         ),
@@ -228,6 +244,7 @@ let artworks = [
             date: "2020",
             author: authors[11].name!,
             localisation: "72 Boulevard Chave, 13005 Marseille",
+            city: "Marseille",
             latitude: 43.2947,
             longitude: 5.3945
     )
