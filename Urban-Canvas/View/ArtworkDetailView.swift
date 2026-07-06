@@ -58,6 +58,12 @@ struct ArtworkDetailView: View {
                         Text("\(artwork.localisation)(Latitude: \(artwork.latitude), Longitude: \(artwork.longitude)")
                     }
                 }
+                
+                MapDetailView(artwork: artwork)
+                    .frame(height: 250)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .padding(.top, 8)
+                
             }
             .padding(.horizontal)
         }

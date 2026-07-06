@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 //La ville pourra faire l'objet d'un struc
 
@@ -23,6 +24,13 @@ struct Artwork: Identifiable {
     let latitude: Double
     let longitude: Double
 }
+
+extension Artwork {
+    var coordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
+    }
+}
+
 
 let artworks = [
     Artwork(
