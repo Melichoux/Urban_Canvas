@@ -25,7 +25,7 @@ struct ArtworkRowView: View {
                             )
                     )
                 )
-            VStack (spacing: 8) {
+            VStack (alignment: .leading ,spacing: 8) {
                 Text(artwork.title)
                 HStack{
                     Image(systemName: "mappin.circle")
