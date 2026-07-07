@@ -12,7 +12,7 @@ struct ArtworkCatalogView: View {
     @State private var filterValue = "Tous"
     @State private var isShowModal = false
     
-    var artworksShow: [Artwork] { /*array de stockage des articles apres .filter, NE SURTOUT PAS REUTILISER filteredArtworks sinon on perd les articles a la suite du premier filtre*/
+    var artworksShow: [Artwork] { /*array de stockage des articles apres .filter, NE SURTOUT PAS UTILISER filteredArtworks sinon on perd les articles a la suite du premier filtre*/
             if filterValue == "Tous" {
                 return filteredArtworks
             } else {
@@ -31,7 +31,9 @@ struct ArtworkCatalogView: View {
             }
             .navigationTitle("Liste des Street arts")
             .toolbar { /*Attention la toolbar s'applique sur la vue interne de NavigationStack car la Navstack est un simple conteneur qui affiche ce qu'on lui indique a l'interieur d'elle meme*/
-//                Picker
+//                Picker(placement: .principal) {
+//                    
+//                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         isShowModal = true
