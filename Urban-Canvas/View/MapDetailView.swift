@@ -33,7 +33,7 @@ struct MapDetailView: View {
                   Image(uiImage: UIImage(named: artwork.image) ?? UIImage(named: "placeholder")!)
                       .resizable()
                       .scaledToFill()
-                      .frame(width: 44, height: 44)
+                      .frame(width: 48, height: 48)
                       .clipShape(Circle())
                       .overlay(
                           Circle()

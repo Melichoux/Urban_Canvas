@@ -10,9 +10,8 @@ import SwiftUI
 struct ArtworkDetailView: View {
     
     var artwork: Artwork
-    
     var body: some View {
-        VStack (alignment: .leading){
+        VStack {
             Image(uiImage: UIImage(named: artwork.image) ?? UIImage(named: "placeholder")!)
                 .resizable()
             //                .scaledToFit()
