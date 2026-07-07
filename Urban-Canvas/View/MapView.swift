@@ -29,13 +29,13 @@ struct MapView: View {
         .onChange(of: selectedPin) {
             isShowModal = true
         }
-        .sheet(isPresented: $isShowModal) {
+        .sheet(isPresented: $isShowModal) { // PROBLEME=> la navlink est envoyée dans la vue du sheet donc elle ne pourra pas s'afficher en plein ecran, a changer ='(
             if let selectedArtwork = artworks.first(where: { $0.id == selectedPin }) {/* permet de recuperer toutes les infos liées à l'artwork qui possede cet id (car sinon selectedPin ne contient que un int) et de pouvoir utiliser ces valeurs*/
                 NavigationStack {
                     Image(selectedArtwork.image)
                         .resizable()
                         .scaledToFill()
-                        .frame(maxWidth: .infinity, maxHeight: 250)
+                        .frame(maxWidth: .infinity, maxHeight: 200)
                         .clipped()
                         .opacity(0.7)
                     
