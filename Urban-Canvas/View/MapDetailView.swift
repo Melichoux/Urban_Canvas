@@ -8,27 +8,14 @@
 import SwiftUI
 import MapKit
 
-//extension CLLocationCoordinate2D{
-//  
-//}
 
 struct MapDetailView: View {
     var artwork: Artwork
     
-    @State private var position: MapCameraPosition
-    
-    init(artwork: Artwork) {
-          self.artwork = artwork
-          _position = State(initialValue: .region(
-              MKCoordinateRegion(
-                  center: artwork.coordinate,
-                  span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-              )
-          ))
-      }
+    // correspond a un state qui est lié a _position
       
       var body: some View {
-          Map(position: $position) {
+          Map {
               Annotation(artwork.title, coordinate: artwork.coordinate) {
                   Image(uiImage: UIImage(named: artwork.image) ?? UIImage(named: "placeholder")!)
                       .resizable()

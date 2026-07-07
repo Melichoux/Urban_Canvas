@@ -25,7 +25,7 @@ struct Artwork: Identifiable {
     let longitude: Double
 }
 
-extension Artwork {
+extension Artwork { // variable qui regroupe automatiquement les latitude et longitude  au bon format pour la map
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
     }

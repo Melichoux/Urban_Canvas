@@ -31,6 +31,7 @@ struct ArtworkCatalogView: View {
             }
             .navigationTitle("Liste des Street arts")
             .toolbar { /*Attention la toolbar s'applique sur la vue interne de NavigationStack car la Navstack est un simple conteneur qui affiche ce qu'on lui indique a l'interieur d'elle meme*/
+//                Picker
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         isShowModal = true
